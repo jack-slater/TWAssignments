@@ -27,4 +27,22 @@ public class DiamondExerciseTest {
         DiamondExercise test = new DiamondExercise();
         assertEquals(test.drawIsoscelesTriangle(5), "    *\n   ***\n  *****\n *******\n*********");
     }
+
+    @Test
+    public void drawDiamond_lengthOne () {
+        DiamondExercise test = new DiamondExercise();
+        assertEquals(test.drawDiamond(1), "*");
+    }
+
+    @Test
+    public void drawDiamond_lengthTwo () {
+        DiamondExercise test = new DiamondExercise();
+        assertEquals(test.drawDiamond(2), " *\n***\n *");
+    }
+
+    @Test
+    public void drawDiamond_lengthThree () {
+        DiamondExercise test = new DiamondExercise();
+        assertEquals(test.drawDiamond(3 ), "  *\n ***\n*****\n ***\n  *");
+    }
 }
