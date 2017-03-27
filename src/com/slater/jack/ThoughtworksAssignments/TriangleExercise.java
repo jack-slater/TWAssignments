@@ -8,4 +8,13 @@ public class TriangleExercise {
     public String drawAsterisk () {
         return "*";
     }
+
+    public String drawHorizontalLine (int n) {
+        String line = "";
+        while (n > 0) {
+            line += "*";
+            n--;
+        }
+        return line;
+    }
 }
