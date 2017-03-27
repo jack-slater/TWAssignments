@@ -45,4 +45,22 @@ public class DiamondExerciseTest {
         DiamondExercise test = new DiamondExercise();
         assertEquals(test.drawDiamond(3 ), "  *\n ***\n*****\n ***\n  *");
     }
+
+    @Test
+    public void drawDiamondWithName_LengthOne () {
+        DiamondExercise test = new DiamondExercise();
+        assertEquals(test.drawDiamondWithName(1), "Jack");
+    }
+
+    @Test
+    public void drawDiamondWithName_LengthTwo () {
+        DiamondExercise test = new DiamondExercise();
+        assertEquals(test.drawDiamondWithName(2), " *\nJack\n *");
+    }
+
+    @Test
+    public void drawDiamondWithName_LengthThree () {
+        DiamondExercise test = new DiamondExercise();
+        assertEquals(test.drawDiamondWithName(3), "  *\n ***\nJack\n ***\n  *");
+    }
 }

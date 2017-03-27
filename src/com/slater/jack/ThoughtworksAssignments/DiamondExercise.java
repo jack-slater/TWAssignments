@@ -46,5 +46,14 @@ public class DiamondExercise {
         System.out.println(diamond + "\n");
         return diamond;
     }
+
+    public String drawDiamondWithName (int n) {
+        String name = "Jack";
+        if (n == 1) return name;
+        String topTriangle = drawIsoscelesTriangle(n);
+        int i = topTriangle.lastIndexOf("\n");
+        topTriangle = topTriangle.substring(0, i);
+        return topTriangle +  "\n" + name + drawLowerDiamond(n - 1);
+    }
 }
 
