@@ -40,7 +40,6 @@ public class TriangleExercise {
             }
             i++;
         }
-        System.out.println(triangle + "\n");
         return triangle;
     }
 }

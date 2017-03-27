@@ -43,7 +43,6 @@ public class DiamondExercise {
         String diamond = "";
         diamond += drawIsoscelesTriangle(n);
         diamond += n == 2 ? "\n *" : drawLowerDiamond(n - 1);
-        System.out.println(diamond + "\n");
         return diamond;
     }
 
