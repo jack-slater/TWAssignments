@@ -57,4 +57,28 @@ public class TriangleExerciseTest {
         TriangleExercise test = new TriangleExercise();
         assertEquals(test.drawVerticalLine(10), "*\n*\n*\n*\n*\n*\n*\n*\n*\n*");
     }
+
+    @Test
+    public void drawRightTriangle_LengthOne () {
+        TriangleExercise test = new TriangleExercise();
+        assertEquals(test.drawRightTriangle(1), "*");
+    }
+
+    @Test
+    public void drawRightTriangle_LengthTwo () {
+        TriangleExercise test = new TriangleExercise();
+        assertEquals(test.drawRightTriangle(2), "*\n**");
+    }
+
+    @Test
+    public void drawRightTriangle_LengthThree () {
+        TriangleExercise test = new TriangleExercise();
+        assertEquals(test.drawRightTriangle(3), "*\n**\n***");
+    }
+
+    @Test
+    public void drawRightTriangle_LengthFive () {
+        TriangleExercise test = new TriangleExercise();
+        assertEquals(test.drawRightTriangle(5), "*\n**\n***\n****\n*****");
+    }
 }

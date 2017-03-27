@@ -27,4 +27,20 @@ public class TriangleExercise {
         }
         return line;
     }
+
+    public String drawRightTriangle (int n) {
+        String triangle = "";
+        int i = 1;
+        while (i <= n) {
+            if (triangle.length() > 0) triangle += "\n";
+            int j = i;
+            while (j > 0) {
+                triangle += "*";
+                j--;
+            }
+            i++;
+        }
+        System.out.println(triangle + "\n");
+        return triangle;
+    }
 }
