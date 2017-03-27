@@ -17,4 +17,14 @@ public class TriangleExercise {
         }
         return line;
     }
+
+    public String drawVerticalLine (int n) {
+        String line = "";
+        while (n > 0) {
+            if (line.length() > 0) line += "\n";
+            line += "*";
+            n--;
+        }
+        return line;
+    }
 }
